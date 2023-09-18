@@ -173,7 +173,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'kolobanga',
-        'USER': 'kolobanga_admin',
+        'USER': 'kolobanga',
         'PASSWORD': 'kolobanga',
         'HOST': 'localhost',
         'PORT': '',
