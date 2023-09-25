@@ -20,12 +20,12 @@ WEB_SERVER_HOST = "127.0.0.1"
 WEB_SERVER_PORT = 3001
 
 # Path to webhook route, on which Telegram will send requests
-WEBHOOK_PATH = "/lesopilka-bot"
+WEBHOOK_PATH = "/lesopilka-bot/"
 # Secret key to validate requests from Telegram (optional)
 WEBHOOK_SECRET = "my-secret"
 # Base URL for webhook will be used to generate webhook URL for Telegram,
 # in this example it is used public DNS with HTTPS support
-BASE_WEBHOOK_URL = "https://lesopilka-kirov.ru/"
+BASE_WEBHOOK_URL = "https://lesopilka-kirov.ru"
 
 # All handlers should be attached to the Router (or Dispatcher)
 router = Router()
