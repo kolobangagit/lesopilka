@@ -2,20 +2,21 @@ from aiohttp import web
 
 from django.core.management.base import BaseCommand
 from aiogram import Bot, Dispatcher, Router, types
-from apps.lesopilka_bot.bot import BASE_WEBHOOK_URL, WEBHOOK_PATH, WEB_SERVER_HOST, WEB_SERVER_PORT, on_startup, dp
+from apps.lesopilka_bot.bot import BASE_WEBHOOK_URL, WEBHOOK_PATH, WEB_SERVER_HOST, WEB_SERVER_PORT, on_startup
 from aiogram.enums import ParseMode
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
 
 
 TOKEN = '6569461259:AAEu8HfH6vohmD3QK93CUkDKX6D5nLuRzV4'
-dp = dp
+
 
 router = Router()
 
 
 def main() -> None:
-    # Dispatcher is a root router
+    from apps.lesopilka_bot.bot import dp
     dp = dp
+    # Dispatcher is a root router
     # ... and all other routers should be attached to Dispatcher
     dp.include_router(router)
 
