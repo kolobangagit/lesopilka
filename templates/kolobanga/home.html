@@ -1042,8 +1042,6 @@ t396_init('363041318');
     {% csrf_token %}
 </div></a>
 </div>
-{% block footer_scripts %}
-    {{ block.super }}
        <script>
            $(document).ready(function() {
             $('#form363010826').on('submit', function(e){
@@ -1118,7 +1116,5 @@ t396_init('363041318');
            });
        </script>
       <script src="{% static 'js/home_dashboard.js' %}"></script>
-{% endblock %}
-
     </body>
 </html>
