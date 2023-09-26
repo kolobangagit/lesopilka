@@ -30,6 +30,8 @@ BASE_WEBHOOK_URL = "https://lesopilka-kirov.ru"
 # All handlers should be attached to the Router (or Dispatcher)
 router = Router()
 
+dp = Dispatcher()
+
 
 @router.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
@@ -67,7 +69,7 @@ async def on_startup(bot: Bot) -> None:
 
 def main() -> None:
     # Dispatcher is a root router
-    dp = Dispatcher()
+
     # ... and all other routers should be attached to Dispatcher
     dp.include_router(router)
 
