@@ -1093,9 +1093,20 @@ t396_init('363041318');
             })
             $('#form363032080').on('submit', function(e){
                 e.preventDefault();
+                $("#form363032080.t-input-error").css('display', 'none');
                 let name = $("input[name='name_two']").val();
                 let phone = $("#phone_1").val();
                 let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]');
+                if (name === '') {
+                    $("#form363032080 .t-input-error").text('Поле обязательное');
+                    $("#form363032080 .t-input-error").css('display', 'block');
+                    return false
+                }
+                if (phone === '') {
+                    $("#form363032080 .t-input-error").text('Поле обязательное');
+                    $("#form363032080 .t-input-error").css('display', 'block');
+                    return false
+                }
                 $.ajax({
                     type: 'POST',
                     url: '/send_info/',
@@ -1116,9 +1127,20 @@ t396_init('363041318');
             })
             $('#form363041318').on('submit', function(e){
                 e.preventDefault();
+                $("#form363041318.t-input-error").css('display', 'none');
                 let name = $("input[name='name_three']").val();
                 let phone = $("#phone_2").val();
                 let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]');
+                if (name === '') {
+                    $("#form363041318 .t-input-error").text('Поле обязательное');
+                    $("#form363041318 .t-input-error").css('display', 'block');
+                    return false
+                }
+                if (phone === '') {
+                    $("#form363041318 .t-input-error").text('Поле обязательное');
+                    $("#form363041318 .t-input-error").css('display', 'block');
+                    return false
+                }
                 $.ajax({
                         type: 'POST',
                         url: '/send_info/',
@@ -1137,6 +1159,25 @@ t396_init('363041318');
     
                     })
              })
+             $("input[name='name_three']").on('change', function(){
+                $("#form363041318.t-input-error").css('display', 'none');
+             })
+             $("input[name='name_two']").on('change', function(){
+                $("#form363032080.t-input-error").css('display', 'none');
+             })
+             $("input[name='name']").on('change', function(){
+                $("#form363010826 .t-input-error").css('display', 'none');
+             })
+             $("#phone_1").on('change', function() (
+                $("#form363010826 .t-input-error").css('display', 'none');
+             ))
+             $("#phone_2").on('change', function() (
+                $("#form363032080.t-input-error").css('display', 'none');
+             ))
+             $("#phone_3").on('change', function() (
+                $("#form363041318.t-input-error").css('display', 'none');
+             ))
+             
             
            });
        </script>
