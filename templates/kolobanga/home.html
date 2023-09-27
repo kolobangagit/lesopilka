@@ -31,6 +31,7 @@
         <!--<link rel="stylesheet" href="/tilda-blocks-page22471510.min.css?t=1660571546" type="text/css" media="all" onerror="this.loaderr='y';">-->
         <link rel="stylesheet" href="{% static 'kolobanga/css/tilda-animation-1.0.min.css' %}" type="text/css" media="all" onerror="this.loaderr='y';">
         <link rel="stylesheet" href="{% static 'kolobanga/css/tilda-forms-1.0.min.css' %}" type="text/css" media="all" onerror="this.loaderr='y';">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
         <script type="text/javascript">
             function t_onReady(func) {
                                         if (document.readyState != 'loading') {
@@ -394,8 +395,6 @@
                 <style id="t-zero-placeholder-363010826-1633277624657">#rec363010826 [data-elem-id="1633277624657"] input::-webkit-input-placeholder{color:#000;opacity:0.5;}#rec363010826 [data-elem-id="1633277624657"] input::-moz-placeholder{color:#000;opacity:0.5;}#rec363010826 [data-elem-id="1633277624657"] input:-moz-placeholder{color:#000;opacity:0.5;}#rec363010826 [data-elem-id="1633277624657"] input:-ms-input-placeholder{color:#000;opacity:0.5;}#rec363010826 [data-elem-id="1633277624657"] textarea::-webkit-input-placeholder{color:#000;opacity:0.5;}#rec363010826 [data-elem-id="1633277624657"] textarea::-moz-placeholder{color:#000;opacity:0.5;}#rec363010826 [data-elem-id="1633277624657"] textarea:-moz-placeholder{color:#000;opacity:0.5;}#rec363010826 [data-elem-id="1633277624657"] textarea:-ms-input-placeholder{color:#000;opacity:0.5;}</style>
                 <style id="t-zero-form-c-styles">.tn-atom .t-input-block {position: relative;}</style>
                 <form class="t-form t-form_inputs-total_2 js-form-proccess" id="form363010826" name="form363010826" action="https://forms.tildacdn.com/procces/" method="POST" role="form" data-formactiontype="2" data-inputbox=".t-input-group" data-success-callback="t396_onSuccess" data-success-popup="y" data-error-popup="y">
-                    <input type="hidden" tabindex="-1"value="cdb9947deaa77006263a95e05ea0a409" 
-                    name="formservices[]" class="js-formaction-services">
                     <div class="js-successbox t-form__successbox t-text t-text_sm" style="display: none;"></div>
                     <div class="t-form__inputsbox">
                         <div class="t-input-group t-input-group_nm" data-input-lid="1633277651985" style="margin-bottom: 20px;">
@@ -403,14 +402,13 @@
                             <input type="text" name="name" class="t-input js-tilda-rule t-input-inline-styles" data-tilda-rule="name" placeholder="Ваши имя" data-tilda-req="1" style="color: rgb(0, 0, 0); border: 1px solid rgb(222, 222, 222); background-color: rgb(255, 255, 255); font-size: 14px; font-weight: 400; height: 50px; width: 90%;">
                             <div class="t-input-error">
                                 
-                            </div></div></div><div class="t-input-group t-input-group_ph" data-input-lid="1633277651985"  style="margin-bottom: 20px;" data-init-mask="yes"><div class="t-input-block" style="overflow: visible;"><div class="t-input t-input-phonemask__wrap t-input-inline-styles" style="color: rgb(0, 0, 0); border: 1px solid rgb(222, 222, 222); background-color: rgb(255, 255, 255); font-size: 14px; font-weight: 400; height: 50px; width: 90%;"><div class="t-input-phonemask__select"><span class="t-input-phonemask__select-flag" data-phonemask-flag="ru"></span><span class="t-input-phonemask__select-triangle"></span><span class="t-input-phonemask__select-code" style="font-size: 14px; font-weight: 400;">+7</span></div><div class="t-input-phonemask__options-wrap" data-nosnippet="">
-                                <noindex>
-                                    <div class="t-input-phonemask__options-item" id="t-phonemask_ru" data-phonemask-name="Russian Federation (Российская Федерация)" data-phonemask-mask="+7(999) 999-99-99" data-phonemask-country-code="ru" data-phonemask-code="+7"><div class="t-input-phonemask__options-name">Russian Federation (Российская Федерация)</div><div class="t-input-phonemask__options-right"><span class="t-input-phonemask__options-code">+7</span><span class="t-input-phonemask__options-flag t-input-phonemask__options-flag_ru"></span></div></div>
-                                    </noindex>
+                            </div></div>
+                        </div>
+                        <div class="t-input-group t-input-group_ph" data-input-lid="1633277651985"  style="margin-bottom: 20px;" data-init-mask="yes">
+                            <div class="t-input-block" style="overflow: visible;">
+                                <div class="t-input t-input-phonemask__wrap t-input-inline-styles" style="color: rgb(0, 0, 0); border: 1px solid rgb(222, 222, 222); background-color: rgb(255, 255, 255); font-size: 14px; font-weight: 400; height: 50px; width: 90%;"><div class="t-input-phonemask__select"><span class="t-input-phonemask__select-flag" data-phonemask-flag="ru"></span><span class="t-input-phonemask__select-triangle"></span><span class="t-input-phonemask__select-code" style="font-size: 14px; font-weight: 400;">+7</span></div><div class="t-input-phonemask__options-wrap" data-nosnippet="">
+                                   <input type='text' id="phone" value="">
                                 </div>
-                                <input type="hidden" class="js-phonemask-result-iso" name="tildaspec-phone-part[]-iso" value="" tabindex="-1">
-                                <input type="tel" class="t-input t-input-phonemask" name="tildaspec-phone-part[]" value="" placeholder="(999) 999-99-99" data-phonemask-iso="ru" data-phonemask-code="+7" data-phonemask-mask="+7(999) 999-99-99" maxlength="14" data-phonemask-without-code="(999) 999-99-99" style="font-size: 14px; font-weight: 400;">
-                                <input type="hidden" class="js-phonemask-result js-tilda-rule" data-tilda-rule="phone" name="Phone" value="" data-tilda-req="1" tabindex="-1" data-tilda-rule-minlength="19">        
                             </div>
                             <div class="t-input-error"></div>
                         </div>
@@ -1042,12 +1040,19 @@ t396_init('363041318');
     {% csrf_token %}
 </div></a>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+  const input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+  });
+  </script>
        <script>
            $(document).ready(function() {
             $('#form363010826').on('submit', function(e){
                 e.preventDefault();
-                let name = $(input[name='name']);
-                let phone = $(input[name='Phone']);
+                let name = $("input[name='name']");
+                let phone = $("input[name='Phone']");
                 let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]');
                  $.ajax({
                     type: 'POST',
@@ -1068,8 +1073,8 @@ t396_init('363041318');
             })
             $('#form363032080').on('submit', function(e){
                 e.preventDefault();
-                let name = $(input[name='name_two']);
-                let phone = $(input[name='Phone_two']);
+                let name = $("input[name='name_two']");
+                let phone = $("input[name='Phone_two']");
                 let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]');
                 $.ajax({
                     type: 'POST',
@@ -1091,8 +1096,8 @@ t396_init('363041318');
             })
             $('#form363041318').on('submit', function(e){
                 e.preventDefault();
-                let name = $(input[name='name_three']);
-                let phone = $(input[name='Phone_three']);
+                let name = $("input[name='name_three']");
+                let phone = $("input[name='Phone_three']");
                 let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]');
                 $.ajax({
                         type: 'POST',
