@@ -1060,6 +1060,7 @@ t396_init('363041318');
            $(document).ready(function() {
             $('#form363010826').on('submit', function(e){
                 e.preventDefault();
+                $("#form363010826 .t-input-error").text('Поле обязательное').css('display': 'none');
                 let name = $("input[name='name']").val();
                 let phone = $("#phone").val();
                 if (name === '') {
@@ -1067,7 +1068,7 @@ t396_init('363041318');
                     return false
                 }
                 if (phone === '') {
-                    $("#form363010826 .t-input-error").text('Поле обязательное');
+                    $("#form363010826 .t-input-error").text('Поле обязательное').css('display': 'block');
                     return false
                 }
                 let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]');
