@@ -32,6 +32,7 @@
         <link rel="stylesheet" href="{% static 'kolobanga/css/tilda-animation-1.0.min.css' %}" type="text/css" media="all" onerror="this.loaderr='y';">
         <link rel="stylesheet" href="{% static 'kolobanga/css/tilda-forms-1.0.min.css' %}" type="text/css" media="all" onerror="this.loaderr='y';">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css">
         <script type="text/javascript">
             function t_onReady(func) {
                                         if (document.readyState != 'loading') {
@@ -64,6 +65,7 @@
     <script src="{% static 'kolobanga/js/tilda-zero-forms-1.0.min.js' %}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
     <!--<script src="{% static 'kolobanga/js/tilda-animation-ext-1.0.min.js'%}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
     <script type="text/javascript" async="" id="t-phonemask-script" src="{% static 'kolobanga/js/tilda-phone-mask-1.1.min.js'%} "> </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
     <script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
 <style id="phone-mask-style">
     .t-input-group.js-error-control-box .t-input-phonemask{border:0!important}
@@ -1084,9 +1086,25 @@ t396_init('363041318');
                     },
                     success: function(response){
                         if(response.status === true){
-                            console.log('True');
+                            Swal.fire({
+                                title: 'Ваш запрос принят менеджер свяжется в ближайшее вреия',
+                                showClass: {
+                                  popup: 'animate__animated animate__fadeInDown'
+                                },
+                                hideClass: {
+                                  popup: 'animate__animated animate__fadeOutUp'
+                                }
+                              })
                         }else{
-                            console.log('False');
+                            Swal.fire({
+                                title: 'Что-то пошло не так и ваш запрос не был доставлен',
+                                showClass: {
+                                  popup: 'animate__animated animate__fadeInDown'
+                                },
+                                hideClass: {
+                                  popup: 'animate__animated animate__fadeOutUp'
+                                }
+                              })
                         }
                     }
                  })
@@ -1117,9 +1135,26 @@ t396_init('363041318');
                     },
                     success: function(response){
                     if(response.status === true){
-                        console.log('True');
+                        // console.log('True');
+                        Swal.fire({
+                            title: 'Ваш запрос принят менеджер свяжется в ближайшее вреия',
+                            showClass: {
+                              popup: 'animate__animated animate__fadeInDown'
+                            },
+                            hideClass: {
+                              popup: 'animate__animated animate__fadeOutUp'
+                            }
+                          })
                     }else{
-                        console.log('False');
+                        Swal.fire({
+                            title: 'Что-то пошло не так и ваш запрос не был доставлен',
+                            showClass: {
+                              popup: 'animate__animated animate__fadeInDown'
+                            },
+                            hideClass: {
+                              popup: 'animate__animated animate__fadeOutUp'
+                            }
+                          })
                     }
                 }
 
@@ -1151,9 +1186,25 @@ t396_init('363041318');
                         },
                         success: function(response){
                         if(response.status === true){
-                            console.log('True');
+                            Swal.fire({
+                                title: 'Ваш запрос принят менеджер свяжется в ближайшее вреия',
+                                showClass: {
+                                  popup: 'animate__animated animate__fadeInDown'
+                                },
+                                hideClass: {
+                                  popup: 'animate__animated animate__fadeOutUp'
+                                }
+                              })
                         }else{
-                            console.log('False');
+                            Swal.fire({
+                                title: 'Что-то пошло не так и ваш запрос не был доставлен',
+                                showClass: {
+                                  popup: 'animate__animated animate__fadeInDown'
+                                },
+                                hideClass: {
+                                  popup: 'animate__animated animate__fadeOutUp'
+                                }
+                              })
                         }
                         }
     
