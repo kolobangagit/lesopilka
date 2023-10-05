@@ -11,8 +11,9 @@ from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # path('', HomeView.as_view(), name='home'),
+    path('home', HomeView.as_view(), name='home'),
     path('', include(('apps.kolobanga.urls', 'kolobanga'), namespace='kolobanga')),
+    path('home', HomeView.as_view(), name='home'),
     path('dashboard/', DashboardView.as_view(), name='dashboard'),
 
     path('profile-update/', ProfileUpdateView.as_view(), name='profile-update'),
