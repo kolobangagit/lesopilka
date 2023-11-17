@@ -1243,7 +1243,10 @@ t396_init('363041318');
            });
 		   $(window).load(function(){
             $('body').css({"margin": ' ', 'pointer-events': ' '});
-            $('audio').remove();
+			let audio =  $('audio');
+			if (audio) {
+			   audio..remove();
+			   }
         });
        </script>
     </body>
