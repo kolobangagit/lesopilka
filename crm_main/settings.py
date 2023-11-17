@@ -26,7 +26,7 @@ SECRET_KEY = '!*ndp-(t$)0cgpl!q4bh^t^o%&*z8!=&g-*e+bocov1h#5zsux'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['95.163.231.59', 'lesopilka-kirov.ru']
+ALLOWED_HOSTS = ['95.163.231.59', 'lesopilka-kirov.ru', '127.0.0.1']
 
 
 # Application definition
