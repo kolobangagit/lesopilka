@@ -654,7 +654,7 @@ t396_init('363013100');
                     t_zeroForms__init(recid, elemid, formElems);
                     });
                     };
-                    var zeroFormsJS = 'https://static.tildacdn.com/js/tilda-zero-forms-1.0.min.js';
+                    var zeroFormsJS = "{% static 'kolobanga/js/tilda-zero-forms-1.0.min.js' %}";
                     if (document.querySelector("script[src^='" + zeroFormsJS + "']")) {
                     zeroFormsOnLoad();
                     } else {
