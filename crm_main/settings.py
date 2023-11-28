@@ -155,6 +155,8 @@ except ImportError:
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
+YANDEX_METRICA_COUNTER_ID = '95705616'
+
 # This will print email in Console.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
