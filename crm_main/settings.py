@@ -39,6 +39,8 @@ DEFAULT_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'analytical',
+    "corsheaders",
+
 ]
 
 THIRD_PARTY_APPS = [
