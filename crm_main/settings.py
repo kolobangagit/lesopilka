@@ -149,6 +149,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
+    "https://cdn.jsdelivr.net"
+]
+
 try:
     from crm_main.local_settings import *
 except ImportError:
