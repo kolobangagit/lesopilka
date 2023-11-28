@@ -38,6 +38,7 @@ DEFAULT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'analytical'',
 ]
 
 THIRD_PARTY_APPS = [
