@@ -12,7 +12,7 @@ def send_bot_info(request):
         phone = request.POST.get('phone', None)
         message = f'Имя: {name} \n Телефон: {phone}'
         data = {
-            "chat_id": 6027445072,
+            "chat_id": 6512580170,
             "text": message,
         }
         response = requests.get(
