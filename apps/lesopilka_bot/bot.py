@@ -11,7 +11,7 @@ from aiogram.utils.markdown import hbold
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
 
 # Bot token can be obtained via https://t.me/BotFather
-TOKEN = '6569461259:AAEu8HfH6vohmD3QK93CUkDKX6D5nLuRzV4'
+TOKEN = '6861020059:AAHnG8RYH9eiE15sg9wM17BikgnPISpxXf4'
 
 # Webserver settings
 # bind localhost only to prevent any external access

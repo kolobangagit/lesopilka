@@ -3,7 +3,7 @@ import requests
 from django.http import JsonResponse
 
 TELEGRAM_URL = "https://api.telegram.org/bot"
-TOKEN = '6569461259:AAEu8HfH6vohmD3QK93CUkDKX6D5nLuRzV4'
+TOKEN = '6861020059:AAHnG8RYH9eiE15sg9wM17BikgnPISpxXf4'
 
 
 def send_bot_info(request):
